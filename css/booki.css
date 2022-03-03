@@ -1,0 +1,495 @@
+/*@font-face
+{
+    font-family: 'Raleway';
+    src: url("fonts/Raleway-ExtraboldItalic");
+}*/
+
+body
+{
+    font-family: 'Raleway', Arial, 'Trebuchet MS';
+    display: block;
+    height: auto;
+    width: 90%;
+    justify-content: center;
+    align-items: center;
+   margin: auto;
+   background-color: rgb(252, 247, 247);
+}
+.corps
+{
+    margin-left: 3%;
+    margin-right: 3%;
+}
+
+/** l'entête de la page (header)**/
+
+.logo_menu
+{
+    margin: 0px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: row;
+}
+
+.logo
+{
+    left: 15%;
+    margin-bottom: -5%;
+}
+
+            /** la section menu de navigation **/ 
+
+            nav
+{
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-end;
+}
+
+nav ul
+{
+    display: flex;
+}
+
+nav ul li
+{
+    list-style-type: none;
+    padding-left: 30px;
+}
+
+nav ul li a
+{
+    text-decoration: none;
+    color: black;
+    font-size: 1.3em;
+}
+
+nav ul li a:hover
+{
+    color: rgb(16, 125, 214);
+    border-top: solid rgb(48, 132, 241);
+    padding-top: 35px;
+}
+
+nav ul li a:focus
+{
+    color:  rgb(16, 125, 214);
+}
+
+/** le corps de la page (main)**/
+
+main
+{
+    margin-left: 3%;
+    margin-right: 3%;
+}
+
+main >h2
+{
+    margin: 5px;
+}
+
+main >p
+{
+    margin-top: 10px;
+    margin-bottom: 15px;
+}
+
+form
+{
+    margin-top: 10px;
+    margin-bottom: -10px;
+}
+
+.info 
+{
+    margin-top: -30px;
+    margin-bottom: 10x;
+}
+
+/**la barre de recherche**/
+form
+{
+    display: flex;
+    align-items: center;
+    width: auto;
+    height: auto;
+}
+
+form >i
+{
+    color: rgb(16, 125, 214);
+    padding: 10px;
+    font-size: 20px;
+    margin-right: -0px;
+    background-color: rgba(128, 128, 128, 0.192);
+    border-top-left-radius: 12px;
+    border-bottom-left-radius: 12px;
+    text-align: center;
+}
+
+input, button
+{
+    height: 40px;
+    width: auto;
+}
+
+input
+{
+    width: 250px;
+    align-items: center;
+    border: rgba(128, 128, 128, 0.192) solid 0.5px;
+}
+
+::placeholder
+{
+    color: black;
+    font-size: 19px;
+}
+
+button
+{
+    border: none;
+    background-color: rgb(16, 125, 214);
+    color: white;
+    border-top-right-radius: 12px;
+    border-bottom-right-radius: 12px;
+    margin-left: -6px;
+}
+                                        /** la partie filtres**/
+
+.filtres
+{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    height: 30px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.filtres h2
+{
+    font-size: 1.3em;
+}
+
+.f
+{
+    display: flex;
+    align-items: center;
+    height: 35px;
+    width: auto;
+}
+
+.f >.filtres_icone
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(128, 128, 128, 0.651);
+    color: rgb(16, 125, 214);
+    border-radius: 60px;
+    height: 30px;
+    width: 40px;
+    padding: 10px;
+    margin-right: -60px;
+}
+
+.f .filtres_icone >i
+{
+    font-size: 20px;
+}
+
+.fitres, .economique, .familial, .romantique, .animaux
+{
+    margin-right: 15px;
+    height: auto;
+    height: auto;
+}
+
+.economique, .familial, .romantique, .animaux
+{
+    border: rgba(128, 128, 128, 0.651) solid 0.5px;
+    border-radius: 60px;
+    padding-left: 60px;
+    padding-right: 5px;
+    padding-top: 0px;
+    padding-bottom: 0px;
+    font-size: 13px;
+}
+
+.economique:hover, .familial:hover, .romantique:hover, .animaux:hover
+{
+    box-shadow: rgba(0, 0, 255, 0.479) 6px 0px 6px;
+}
+
+.f
+{
+    display: flex;
+}
+
+.filtres >a
+{
+    text-decoration: none;
+    color: black;
+}
+
+.filtres >a:hover
+{
+    color: rgb(16, 125, 214);
+}
+
+                                        /**la phrase "plus de 50 chambres...."**/
+
+.info_plus
+{
+    margin: 10px;
+}
+
+.infos
+{
+    display: flex;
+    align-items: center;
+    width: auto;
+    height: auto;
+}
+
+.info_icone >i
+{
+    border: rgb(16, 125, 214)solid 1px;
+    border-radius: 200px 200px;
+    padding: 10px;
+    color: rgb(16, 125, 214);
+    font-size: 10px;
+}
+
+                                        /** la partie hebergement à marseille**/
+
+.compacte
+{
+    display: flex;
+    justify-content: space-between;
+}
+
+section
+{
+    background-color: rgba(128, 128, 128, 0.205);
+    width: 64%;
+    border-radius: 12px;
+    padding: 10px;
+}
+section >h1, section >a
+{
+    margin-left: 12px;
+}
+
+section >a
+{
+    color: black;
+    text-decoration: none;
+}
+
+.hebergement
+{
+    display: flex;
+    justify-content: space-between;
+}
+
+section p, aside p
+{
+    color: rgba(128, 128, 128, 0.979);
+    font-size: 0.9em;
+    margin-top: -20px;
+    font-weight: 100;
+}
+
+.image_herbergement
+{
+    background-color: white;
+    border-radius: 10px;
+    padding: 5px;
+    justify-content: space-around;
+    margin: 12px;
+}
+
+.image_herbergement >img
+{
+    height: 137px;
+    width: 240px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.starbleue
+{
+   /** display: flex;
+    align-items: center;**/
+    color: rgb(16, 125, 214);
+}
+
+.stargrise
+{
+    color: rgba(128, 128, 128, 0.753);
+}
+
+                                        /** la partie les plus populaires**/
+
+aside
+{
+    background-color: rgba(128, 128, 128, 0.205);
+    width: 30%;
+    border-radius: 12px;
+}
+
+.popu
+{
+    display: flex;
+}
+
+aside >h1
+{
+    margin-left: 20px;
+}
+
+.image_populaire
+{
+    display: flex;
+    padding: 2px;
+    margin: 20px;
+    background-color: white;
+    border-radius: 12px;
+}
+
+.image_populaire >img
+{
+    height: 150px;
+    width: 200px;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+
+.text_populaire
+{
+    margin: 10px;
+}
+
+                                        /** la partie activités à marseille**/
+
+article
+{
+    margin-bottom: 3%;
+}
+
+.activite
+{
+    display: flex;
+    justify-content: space-between;
+    height: 540px;
+}
+
+.img_activite
+{
+    background-color: white;
+    border-radius: 12px;
+    box-shadow: rgba(128, 128, 128, 0.699) 0px 0px 10px;
+}
+
+.img_activite >img
+{
+    height: 500px;
+    width: 300px;
+    border-top-left-radius: 12px;
+    border-top-right-radius: 12px;
+}
+
+h5
+{
+    margin-left: 10px;
+    padding-bottom: 5px;
+    height: auto;
+}
+
+.img_activite_group
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: auto;
+}
+
+.img_activite_group .imag_superpose1
+{
+    background-color: white;
+    border-radius: 12px;
+    height: 200px;
+    box-shadow: rgba(128, 128, 128, 0.699) 0px 0px 10px;
+}
+
+.img_activite_group .imag_superpose1 >img
+{
+    height: 150px;
+    width: 300px;
+    border-top-left-radius: 12px;
+    border-top-right-radius: 12px;
+}
+
+.img_activite_group .imag_superpose
+{
+    background-color: white;
+    border-radius: 12px;
+    height: 250px;
+    box-shadow: rgba(128, 128, 128, 0.699) 0px 0px 10px;
+}
+
+.img_activite_group .imag_superpose >img
+{
+    height: 200px;
+    width: 300px;
+    border-top-left-radius: 12px;
+    border-top-right-radius: 12px;
+}
+
+                                        /** la partie cliquable des images de l'hebergement, plus populaire et de l' activité**/
+
+.hebergement >a, .populaire >a, .activite >a, .img_activite_group >a
+{
+    text-decoration: none;
+    color: black;
+}
+
+.hebergement >a:hover, .populaire >a:hover, .activite >a:hover, .img_activite_group >a:hover
+{
+    color:  rgb(48, 132, 241);
+    box-shadow: rgba(48, 132, 241, 0.548) 6px 0px 6px;
+}
+
+.hebergement >a:focus, .populaire >a:focus, .activite >a:focus, .img_activite_group >a:focus
+{
+    color: red;
+}
+
+/** le pied de page (footer)**/
+
+footer
+{
+    background-color: rgba(128, 128, 128, 0.233);
+    margin-bottom: 20px;
+}
+.renseignements
+{
+    display: flex;
+    margin-left: 3%;
+}
+
+.renseignements h6 a
+{
+    text-decoration: none;
+    color:grey;
+    font-size: 1.5em;
+}
+
+#nos_hebergements, #assistance
+{
+    margin-left: 200px;
+}
